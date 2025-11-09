@@ -5,9 +5,32 @@
 # Genann
 
 Genann is a minimal, well-tested library for training and using feedforward
-artificial neural networks (ANN) in C. Its primary focus is on being simple,
+artificial neural networks (ANN) in C, by [Lewis Van Winkle](https://github.com/codeplea).
+Its primary focus is on being simple,
 fast, reliable, and hackable. It achieves this by providing only the necessary
 functions and little extra.
+
+## Installation
+
+Run:
+```bash
+$ npm i genann.c
+```
+
+And then include `genann.h` as follows:
+```c
+#include "node_modules/genann.c/genann.h"
+```
+
+You may also want to include `genann.c` as follows:
+```c
+#ifndef __GENANN_C__
+#define __GENANN_C__
+#include "node_modules/genann.c/genann.c"
+#endif
+```
+
+This will include both the function declaration and their definitions into a single file.
 
 ## Features
 
@@ -23,7 +46,7 @@ functions and little extra.
 
 ## Building
 
-Genann is self-contained in two files: `genann.c` and `genann.h`. To use Genann, simply add those two files to your project.
+Genann is self-contained in two files: `genann.c` and `genann.h`. To use Genann, simply include those two files in your project.
 
 ## Example Code
 
@@ -152,3 +175,10 @@ I recommend the [FANN library](http://leenissen.dk/fann/wp/). Another
 good library is Peter van Rossum's [Lightweight Neural
 Network](http://lwneuralnet.sourceforge.net/), which despite its name, is
 heavier and has more features than Genann.
+
+<br>
+<br>
+
+
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/genann.c)

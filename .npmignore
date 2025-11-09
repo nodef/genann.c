@@ -1,0 +1,6 @@
+doc/
+example/
+.travis.yml
+example*.c
+minctest.h
+test.c
